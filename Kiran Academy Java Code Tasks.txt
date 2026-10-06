@@ -1,0 +1,111 @@
+Kiran Academy Java Tasks
+
+1. Hello World ... by YOUR_NAME??
+
+answers=
+
+public class HelloWorld {
+	public static void main(String[] args) {
+        System.out.println("Hello World ... by Rushikesh");
+    }
+}
+
+
+2. Create 2 variables cost_price, selling_price and calculate the profit or loss??
+
+answers=
+
+
+public class OddEven {
+	 public static void main(String[] args) {
+
+	        int number = 10;
+
+	        if (number % 2 == 0) {
+	            System.out.println("Number is Even");
+	        } 
+	        else {
+	            System.out.println("Number is Odd");
+	        }
+	    }
+
+}
+
+3. WAP to check whether the number is odd or even??
+
+answers=
+
+
+public class ProfitLoss {
+	public static void main(String[] args) {
+
+        double cost_price = 500;
+        double selling_price = 600;
+
+        if (selling_price > cost_price) {
+            double profit = selling_price - cost_price;
+            System.out.println("Profit = " + profit);
+        } 
+        else if (cost_price > selling_price) {
+            double loss = cost_price - selling_price;
+            System.out.println("Loss = " + loss);
+        } 
+        else {
+            System.out.println("No Profit, No Loss");
+        }
+    }
+
+}
+
+
+4. WAP to check whether the age is valid and eligible for voting or not??
+
+answers=
+
+public class VotingEligibility {
+	public static void main(String[] args) {
+
+        int age = 20;
+
+        if (age < 0) {
+            System.out.println("Invalid Age");
+        } 
+        else if (age >= 18) {
+            System.out.println("Age is Valid");
+            System.out.println("Eligible for Voting");
+        } 
+        else {
+            System.out.println("Age is Valid");
+            System.out.println("Not Eligible for Voting");
+        }
+    }
+
+}
+
+
+5. WAP to find whether word1 and word2 are Anagram or Not??
+
+answers=
+
+import java.util.Arrays;
+
+public class Anagram {
+
+    public static void main(String[] args) {
+
+        String word1 = "listen";
+        String word2 = "silent";
+
+        char[] arr1 = word1.toLowerCase().toCharArray();
+        char[] arr2 = word2.toLowerCase().toCharArray();
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        if (Arrays.equals(arr1, arr2)) {
+            System.out.println("Word1 and Word2 are Anagram");
+        } else {
+            System.out.println("Word1 and Word2 are Not Anagram");
+        }
+    }
+}
